@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ana Sayfa</title>
+  <link rel="stylesheet" href="anasayfa.css" />
+</head>
+<body>
+  <div class="home-container">
+    <header>
+      <h2>Günaydın 👋</h2>
+      <p>Bugün ne giyeceğine birlikte karar verelim.</p>
+    </header>
+
+    <section class="weather-box">
+      <h3>🌤️ 17°C - Parçalı Bulutlu</h3>
+      <p>Elazığ, hissedilen 19°C</p>
+    </section>
+
+    <section class="event-box">
+      <h3>📅 Bugünkü Etkinlikler</h3>
+      <ul>
+        <li>👨‍💻 10:00 - Yapay Zeka Proje Toplantısı</li>
+        <li>🏋️ 18:30 - Spor Salonu</li>
+      </ul>
+    </section>
+
+    <section class="suggest-box">
+      <h3>🧠 Kombin Önerisi (Gemini AI)</h3>
+      <button onclick="generateSuggestion()">Kombin Al</button>
+      <p id="suggestionResult"></p>
+    </section>
+
+    <nav class="bottom-nav">
+      <a href="#">🏠 Ana Sayfa</a>
+      <a href="#">👗 Stilim</a>
+      <a href="#">⚙️ Ayarlar</a>
+    </nav>
+  </div>
+
+  <script src="anasayfa.js"></script>
+</body>
+</html>
