@@ -2,33 +2,37 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giriş Yap</title>
-  <link rel="stylesheet" href="login.css" />
-  <script defer src="login.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OutfitApp - Giriş Yap</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet"/>
 </head>
-<body>
-  <div class="container">
-    <div class="form-box">
-      <h2>Giriş Yap</h2>
-      <form>
-        <div class="input-group">
-          <input type="email" placeholder="E-posta" required />
-        </div>
-        <div class="input-group password-group">
-          <input type="password" placeholder="Şifre" id="password" required />
-          <span class="toggle-password" onclick="togglePassword()">👁️</span>
-        </div>
-        <a href="#" class="forgot-link">Şifreni mi unuttun?</a>
-        <div class="social-icons">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Apple" />
-          <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" />
-        </div>
-        <button type="submit" class="login-btn">Giriş Yap</button>
-        <a href="#" class="register-link">Kayıt Ol →</a>
+<body class="gradient-bg">
+  <div class="login-container">
+    <div class="login-card">
+      <h1 class="app-title">OutfitApp</h1>
+      <p class="subtitle">Tarzını Yansıtan Giriş</p>
+
+      <form id="login-form" class="login-form">
+        <input type="email" id="email" name="email" placeholder="E-posta" required/>
+        <input type="password" id="password" name="password" placeholder="Şifre" required/>
+        <button type="submit" class="btn">Giriş Yap</button>
       </form>
+
+      <div class="links">
+        <a href="#">Şifremi Unuttum?</a>
+        <p>Hesabınız yok mu? <a href="register.html">Kayıt Ol</a></p>
+      </div>
+
+      <div class="social-login">
+        <p>Veya sosyal medya ile giriş yap</p>
+        <div class="social-icons">
+          <button class="social-btn">f</button>
+          <button class="social-btn">G</button>
+        </div>
+      </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
